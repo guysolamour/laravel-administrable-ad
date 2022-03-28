@@ -1,12 +1,12 @@
 @php
     if (!empty($group_key)){
-        $adgroup = config('administrable.extensions.ad.models.group')::getByKey($group_key);
+        $adgroup = config('administrable-ad.models.group')::getByKey($group_key);
     }
 @endphp
 
 @if($adgroup)
     <div data-group="slick"
-    @if($group_attrs)
+    @if(isset($group_attrs) && is_array($group_attrs))
         @foreach ($group_attrs as $key => $value)
         {{ $key }}="{{ $value }}"
         @endforeach
@@ -26,11 +26,11 @@
     @if($adgroup->slider)
         @once
             @push('css')
-                <link rel="stylesheet" href="{{ asset('vendor/extensions/ad/css/slick.min.css') }}">
-                <link rel="stylesheet" href="{{ asset('vendor/extensions/ad/css/slick-theme.min.css') }}">
+                <link rel="stylesheet" href="{{ asset('vendor/extensions/ads/css/slick.min.css') }}">
+                <link rel="stylesheet" href="{{ asset('vendor/extensions/ads/css/slick-theme.min.css') }}">
             @endpush
             @push('js')
-            <script src="{{ asset('vendor/extensions/ad/js/slick.min.js') }}"></script>
+            <script src="{{ asset('vendor/extensions/ads/js/slick.min.js') }}"></script>
             @endpush
         @endonce
 
