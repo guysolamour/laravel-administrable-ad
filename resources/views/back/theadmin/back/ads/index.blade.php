@@ -30,7 +30,7 @@
                         <a href="{{ back_route('extensions.ads.ad.create') }}"
                             class="btn btn-sm btn-label btn-round btn-primary"><label><i class="fa fa-plus"></i></label>
                             Ajouter</a>
-                        <a href="#" data-model="{{ config('administrable.extensions.ad.models.ad') }}" id="delete-all" class="btn btn-sm btn-label btn-round btn-danger d-none"><label><i
+                        <a href="#" data-model="{{ config('administrable-ad.models.ad') }}" id="delete-all" class="btn btn-sm btn-label btn-round btn-danger d-none"><label><i
                                     class="fa fa-trash"></i></label> Tous Supprimer</a>
 
                     </div>

@@ -50,7 +50,7 @@
                                         <div class="btn-group float-right">
                                             <a href="{{ back_route('extensions.ads.group.create') }}" class="btn  btn-primary"> <i
                                                     class="fa fa-plus"></i> Ajouter</a>
-                                            <a href="#" class="btn btn-danger d-none" data-model="{{ config('administrable.extensions.ad.models.group') }}"
+                                            <a href="#" class="btn btn-danger d-none" data-model="{{ config('administrable-ad.models.group') }}"
                                                 id="delete-all"> <i class="fa fa-trash"></i> Tous supprimer</a>
                                         </div>
                                     </div>
@@ -151,4 +151,3 @@
 
 @deleteAll()
 @endsection
-

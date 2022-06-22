@@ -22,7 +22,7 @@
     <div class="col-12">
         <div class="d-flex justify-content-between mb-3">
             <h3> Publicités </h3>
-            <a href="#" class="btn btn-danger d-none" data-model="{{ config('administrable.extensions.ad.models.ad') }}" id="delete-all">
+            <a href="#" class="btn btn-danger d-none" data-model="{{ config('administrable-ad.models.ad') }}" id="delete-all">
             <i class="fa fa-trash"></i> Tous supprimer</a>
         </div>
 
