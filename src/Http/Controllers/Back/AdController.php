@@ -72,7 +72,7 @@ class AdController extends BaseController
 
     public function destroy(int $id)
     {
-        $ad   = config('administrable-ad.models.ad')::findOrFail($id);
+        $ad = config('administrable-ad.models.ad')::findOrFail($id);
 
         $ad->delete();
 
